@@ -1,0 +1,15 @@
+<div class="details">
+    <div class="countries-list">
+        <h1>Countries!</h1>
+
+        <ul *ngFor="let name of country">
+            <li (click)="passCountryData(name.country.country_name)">
+                {{name.country.country_name}}
+            </li>
+        </ul>
+    </div>
+    
+    <div *ngIf="flag" class="states-list">
+        <app-states [countryName]=this.countryName></app-states>
+    </div>
+</div>

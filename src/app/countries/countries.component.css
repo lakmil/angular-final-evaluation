@@ -1,0 +1,23 @@
+.details {
+    display: flex;
+}
+
+.countries-list, .states-list {
+    margin: 2%;
+}
+
+li {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 20px;
+    transition: .2s;
+}
+
+li:hover {
+    transform: scale(1.1);
+    background-color: #ccc;
+}
+
+ul {
+    list-style-type: none;
+}

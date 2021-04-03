@@ -1,0 +1,13 @@
+<h1>Country Name: {{name}}</h1>
+<img *ngIf="flagData.flag" src={{flagData.flag}} />
+<h2>States</h2>
+<div class="states" *ngIf="states; else elseBlock" >
+    <ul *ngFor="let state of states">
+        <li (click) = "goToRc2()">
+            {{state.name}}
+        </li>
+    </ul>
+</div>
+<ng-template #elseBlock>
+<p>No states</p>
+</ng-template>
